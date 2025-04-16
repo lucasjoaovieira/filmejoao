@@ -1,0 +1,12 @@
+html, body {
+    margin: 30px;
+    padding: 10;
+ background: url('9600a308-730e-4d6f-94d9-0c21ec570b8b.png');
+}
+  
+  canvas {
+    display: block;
+    filter: drop-shadow(10px 10px 20px rgb(960, 680, 153));
+    border-radius: 55px;
+  }
+  
