@@ -4,17 +4,17 @@ let campoAventura;
 
 function setup() {
   createCanvas(800, 400);
-  createElement("h2", "@maria_isabelyyy22");
+  createElement("h2", "@João-Lacerda");
   createSpan("Sua idade:");
   campoIdade = createInput("5");
-  campoFantasia = createCheckbox("Gosta de filmes de romance?");
+  campoFantasia = createCheckbox("Gosta de filmes de Terror?");
   campoAventura = createCheckbox("Gosta de filme sobre crime?");
-  campoAventura = createCheckbox("Gosta de filme sobre pericia criminal?");
-  campoAventura = createCheckbox("Gosta de filme sobre policial?");
+  campoAventura = createCheckbox("Gosta de filme de ação?");
+  campoAventura = createCheckbox("Gosta de filme sobre suspense");
 }
 
 function draw() {
-  background("pink");
+  background("black");
   let idade = campoIdade.value();
   let gostaDeFantasia = campoFantasia.checked();
   let gostaDeAventura = campoAventura.checked();
@@ -29,7 +29,7 @@ function draw() {
 function geraRecomendacao(idade, gostaDeFantasia, gostaDeAventura) {
   if (idade >= 10) {
     if (idade >= 14) {
-      return "Maria, Kaue, Viviane, Milena";
+      return "João, Ana, lucas, hitalo";
     } else {
       if (idade >= 12) {
         if(gostaDeFantasia || gostaDeAventura) {
@@ -47,9 +47,9 @@ function geraRecomendacao(idade, gostaDeFantasia, gostaDeAventura) {
     }
   } else {
     if (gostaDeFantasia) {
-      return "@maria_isabelyyy22";
+      return "@João-lucas";
     } else {
-      return "Pericia criminal";
+      return "Motos";
     }
   }
 }
